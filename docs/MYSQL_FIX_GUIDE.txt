@@ -1,0 +1,80 @@
+# XAMPP MySQL Fix Guide
+
+## Problem: MySQL shutdown unexpectedly
+
+## Solution 1: Restore MySQL Data (RECOMMENDED - Safest)
+
+### Step 1: Backup Current Data
+1. Navigate to: C:\xampp\mysql\data
+2. Copy the entire "data" folder
+3. Paste it somewhere safe (e.g., Desktop) and rename to "data_backup"
+
+### Step 2: Restore from Backup
+1. Go to: C:\xampp\mysql\backup
+2. Copy all folders from "backup" folder
+3. Paste into: C:\xampp\mysql\data (replace existing files)
+4. Try starting MySQL again in XAMPP
+
+---
+
+## Solution 2: Delete Error Log Files
+
+1. Navigate to: C:\xampp\mysql\data
+2. Find and DELETE these files:
+   - ib_logfile0
+   - ib_logfile1
+   - ibdata1
+3. Try starting MySQL again
+
+---
+
+## Solution 3: Change MySQL Port (If Port Conflict)
+
+1. Open XAMPP Control Panel
+2. Click "Config" button next to MySQL
+3. Select "my.ini"
+4. Find line: port=3306
+5. Change to: port=3307
+6. Save and close
+7. Try starting MySQL again
+
+---
+
+## Solution 4: Run MySQL Recovery
+
+1. Open Command Prompt as Administrator
+2. Navigate to XAMPP MySQL bin:
+   cd C:\xampp\mysql\bin
+3. Run recovery command:
+   mysqld --console --skip-grant-tables --skip-external-locking
+4. Wait for it to start
+5. Press Ctrl+C to stop
+6. Try starting MySQL normally in XAMPP
+
+---
+
+## Solution 5: Reinstall MySQL (Last Resort)
+
+1. In XAMPP, stop all services
+2. Navigate to: C:\xampp\mysql
+3. Rename "mysql" folder to "mysql_old"
+4. Download fresh MySQL from XAMPP
+5. Or reinstall XAMPP completely
+
+---
+
+## Quick Command Line Fix (Try This First!)
+
+Open PowerShell as Administrator and run:
+
+cd C:\xampp\mysql\bin
+.\mysqld --install MySQL --defaults-file="C:\xampp\mysql\bin\my.ini"
+net start MySQL
+
+---
+
+## After Fix: Import Database
+
+Once MySQL starts successfully:
+1. Open: http://localhost/phpmyadmin
+2. Import: C:\Users\nitya\OneDrive\Desktop\Ideathon\database.sql

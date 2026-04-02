@@ -1,0 +1,42 @@
+# Quick Setup Steps for AI Database Chat
+
+## Step 1: Start XAMPP
+1. Open XAMPP Control Panel
+2. Click "Start" for Apache
+3. Click "Start" for MySQL
+4. Wait for both to show green "Running" status
+
+## Step 2: Import Database
+1. Open: http://localhost/phpmyadmin
+2. Click "Import" tab
+3. Click "Choose File"
+4. Select: C:\Users\nitya\OneDrive\Desktop\Ideathon\database.sql
+5. Click "Go" at the bottom
+6. Wait for success message
+
+## Step 3: Configure API Key
+1. Open file: C:\Users\nitya\OneDrive\Desktop\Ideathon\api\config.php
+2. Find line: define('OPENAI_API_KEY', 'your_openai_api_key_here');
+3. Replace 'your_openai_api_key_here' with your actual OpenAI API key
+4. Save the file
+
+## Step 4: Copy Project to XAMPP
+Option 1 - Manual Copy:
+1. Open File Explorer
+2. Copy folder: C:\Users\nitya\OneDrive\Desktop\Ideathon
+3. Paste into: C:\xampp\htdocs\
+4. Result: C:\xampp\htdocs\Ideathon\
+
+Option 2 - Command (Run PowerShell as Administrator):
+Copy-Item -Recurse "C:\Users\nitya\OneDrive\Desktop\Ideathon" "C:\xampp\htdocs\Ideathon"
+
+## Step 5: Test the Application
+1. Open browser
+2. Go to: http://localhost/Ideathon/
+3. You should see the chat interface!
+
+## Troubleshooting
+- If Apache won't start: Check if port 80 is in use
+- If MySQL won't start: Check if port 3306 is in use
+- If 404 error: Verify folder is at C:\xampp\htdocs\Ideathon\
+- If database error: Make sure database was imported successfully

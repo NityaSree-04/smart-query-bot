@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aichatter - Chat with AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1 class="hero-title">Smart Query <span class="text-gradient">BOT</span></h1>
+            <p class="hero-subtitle">Transform <span class="text-highlight">natural language</span> into powerful <span
+                    class="text-highlight">database queries</span> instantly</p>
+        </section>
+
+        <!-- Chat Section -->
+        <section class="chat-section">
+            <div class="chat-window shadow-float">
+                <div id="chatMessages" class="chat-messages scrollbar-custom">
+                    <!-- Default Welcome View -->
+                    <div id="welcomeMessage" class="example-container">
+                        <p class="example-title">Try asking these popular queries:</p>
+                        <button class="example-btn" onclick="askQuestion('Show CSE colleges under 50000 fee')">
+                            Show CSE colleges under 50000 fee
+                        </button>
+                        <button class="example-btn" onclick="askQuestion('Rank 60000 BC-D girl CSE chances')">
+                            Rank 60000 BC-D girl CSE chances
+                        </button>
+                        <button class="example-btn" onclick="askQuestion('List all the colleges')">
+                            List all the colleges
+                        </button>
+                    </div>
+                </div>
+
+                <div class="chat-input-area">
+                    <form id="chatForm" class="input-form">
+                        <div class="input-container">
+                            <input type="text" id="userInput" placeholder="Enter Your Message..." autocomplete="off">
+                            <button type="submit" class="btn-send">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

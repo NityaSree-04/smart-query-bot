@@ -1,0 +1,239 @@
+﻿=== APEAMCET2024 TABLE ANALYSIS ===
+
+1. TABLE STRUCTURE:
+   COL 1 - varchar(48)
+   COL 2 - varchar(834)
+   COL 3 - varchar(60)
+   COL 4 - varchar(4)
+   COL 5 - varchar(8)
+   COL 6 - varchar(4)
+   COL 7 - varchar(20)
+   COL 8 - varchar(5)
+   COL 9 - varchar(6)
+   COL 10 - varchar(4)
+   COL 11 - varchar(5)
+   COL 12 - varchar(11)
+   COL 13 - varchar(7)
+   COL 14 - varchar(8)
+   COL 15 - varchar(7)
+   COL 16 - varchar(8)
+   COL 17 - varchar(7)
+   COL 18 - varchar(8)
+   COL 19 - varchar(8)
+   COL 20 - varchar(9)
+   COL 21 - varchar(8)
+   COL 22 - varchar(9)
+   COL 23 - varchar(8)
+   COL 24 - varchar(9)
+   COL 25 - varchar(8)
+   COL 26 - varchar(9)
+   COL 27 - varchar(8)
+   COL 28 - varchar(9)
+   COL 29 - varchar(11)
+   COL 30 - varchar(12)
+   COL 31 - varchar(7)
+   COL 32 - varchar(10)
+
+2. TOTAL RECORDS:
+   Total rows: 1570
+
+3. SAMPLE DATA (First 3 rows):
+
+   Row 0:
+      COL 1: APEAPCET-2024[ M P C STREAM] LAST RANK DETAILS  
+      COL 2: 
+      COL 3: 
+      COL 4: 
+      COL 5: 
+      COL 6: 
+      COL 7: 
+      COL 8: 
+      COL 9: 
+      COL 10: 
+      COL 11: 
+      COL 12: 
+      COL 13: 
+      COL 14: 
+      COL 15: 
+      COL 16: 
+      COL 17: 
+      COL 18: 
+      COL 19: 
+      COL 20: 
+      COL 21: 
+      COL 22: 
+      COL 23: 
+      COL 24: 
+      COL 25: 
+      COL 26: 
+      COL 27: 
+      COL 28: 
+      COL 29: 
+      COL 30: 
+      COL 31: 
+      COL 32: 
+
+   Row 1:
+      COL 1: SNO
+      COL 2: INSTCODE
+      COL 3: NAME OF THE INSTITUTION
+      COL 4: TYPE
+      COL 5: INST_REG
+      COL 6: DIST
+      COL 7: PLACE
+      COL 8: COED
+      COL 9: AFFL.
+      COL 10: ESTD
+      COL 11: A_REG
+      COL 12: branch_code
+      COL 13: OC_BOYS
+      COL 14: OC_GIRLS
+      COL 15: SC_BOYS
+      COL 16: SC_GIRLS
+      COL 17: ST_BOYS
+      COL 18: ST_GIRLS
+      COL 19: BCA_BOYS
+      COL 20: BCA_GIRLS
+      COL 21: BCB_BOYS
+      COL 22: BCB_GIRLS
+      COL 23: BCC_BOYS
+      COL 24: BCC_GIRLS
+      COL 25: BCD_BOYS
+      COL 26: BCD_GIRLS
+      COL 27: BCE_BOYS
+      COL 28: BCE_GIRLS
+      COL 29: OC_EWS_BOYS
+      COL 30: OC_EWS_GIRLS
+      COL 31: COLLFEE
+      COL 32: 
+
+   Row 2:
+      COL 1: 1
+      COL 2: ACEE
+      COL 3: ADARSH COLLEGE OF ENGINEERING
+      COL 4: PVT
+      COL 5: AU
+      COL 6: EG
+      COL 7: GOLLAPROLU
+      COL 8: COED
+      COL 9: JNTUK
+      COL 10: 2008
+      COL 11: AU
+      COL 12: CIV
+      COL 13: 146103
+      COL 14: 146103
+      COL 15: 175237
+      COL 16: 175237
+      COL 17: 168197
+      COL 18: 168197
+      COL 19: 146103
+      COL 20: 146103
+      COL 21: 146103
+      COL 22: 146103
+      COL 23: 146103
+      COL 24: 146103
+      COL 25: 146103
+      COL 26: 146103
+      COL 27: 146103
+      COL 28: 146103
+      COL 29:  
+      COL 30:  
+      COL 31: 43000
+      COL 32: 
+
+4. UNIQUE BRANCH CODES:
+   - 
+   - AGR
+   - AI
+   - AID
+   - AIM
+   - ASE
+   - AUT
+   - BDT
+   - BIO
+   - CAD
+   - CAI
+   - CBA
+   - CBC
+   - CCC
+   - CDA
+   - CHE
+   - CIA
+   - CIC
+   - CIT
+   - CIV
+   - CN
+   - CS
+   - CSB
+   - CSBS
+   - CSC
+   - CSD
+   - CSE
+   - CSEB
+   - CSER
+   - CSG
+   - CSM
+   - CSO
+   - CSS
+   - CST
+   - CSW
+   - DS
+   - EBM
+   - ECA
+   - ECE
+   - ECES
+   - ECM
+   - ECT
+   - ECV
+   - EEE
+   - EIE
+   - EII
+   - EVT
+   - FDE
+   - FDT
+   - GDT
+   - GIN
+   - INF
+   - IOT
+   - IST
+   - MAD
+   - MAU
+   - MEC
+   - MET
+   - MII
+   - MIN
+   - MMM
+   - MMT
+   - MRB
+   - NAM
+   - PEE
+   - PET
+   - PHD
+   - PHM
+   - RBT
+   - SWE
+
+5. COLLEGE TYPES:
+   - : 3 colleges
+   - PU: 167 colleges
+   - PVT: 1280 colleges
+   - SF: 50 colleges
+   - SS: 2 colleges
+   - UNIV: 66 colleges
+
+6. FEE RANGE:
+   Min: Γé╣10000
+   Max: Γé╣160000
+   Avg: Γé╣54364
+
+7. SAMPLE COLLEGES:
+   - ADARSH COLLEGE OF ENGINEERING
+   - ADITYA COLLEGE OF ENGINEERING AND TECHNOLOGY
+   - ADITYA COLLEGE OF PHARMACY
+   - ADI KAVI NANNAYA UNIVERSITY COLLEGE OF ENGG.-SELF FINANCE
+   - ADITYA PHARMACY COLLEGE
+   - B V CHALAMAIAH ENGINEERING COLLEGE
+   - BVC COLLEGE OF ENGINEERING
+   - BONAM VENKATA CHALAMAIAH INST. OF TECH AND SCI.
+   - CHAITANYA INST. OF SCI. AND TECHNOLOGY
+   - GIET ENGINEERING COLLEGE

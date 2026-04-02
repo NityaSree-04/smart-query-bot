@@ -1,0 +1,51 @@
+# How to Get OpenAI API Key
+
+## Step 1: Create OpenAI Account
+1. Go to: https://platform.openai.com/signup
+2. Sign up with your email or Google/Microsoft account
+3. Verify your email address
+
+## Step 2: Add Payment Method (Required)
+1. Go to: https://platform.openai.com/account/billing
+2. Click "Add payment method"
+3. Add a credit/debit card
+4. Add initial credits (minimum $5 recommended)
+
+Note: OpenAI requires payment info even for API usage. You only pay for what you use.
+
+## Step 3: Generate API Key
+1. Go to: https://platform.openai.com/api-keys
+2. Click "Create new secret key"
+3. Give it a name (e.g., "Database Chat App")
+4. Click "Create secret key"
+5. COPY THE KEY IMMEDIATELY (you won't see it again!)
+6. It will look like: sk-proj-xxxxxxxxxxxxxxxxxxxxx
+
+## Step 4: Add Key to Your Project
+1. Open file: C:\Users\nitya\OneDrive\Desktop\Ideathon\api\config.php
+2. Find line 11:
+   define('OPENAI_API_KEY', 'your_openai_api_key_here');
+3. Replace with your actual key:
+   define('OPENAI_API_KEY', 'sk-proj-your-actual-key-here');
+4. Save the file
+
+## Pricing (Pay-as-you-go)
+- GPT-4: ~$0.03 per 1K tokens (about 750 words)
+- GPT-3.5-turbo: ~$0.002 per 1K tokens (much cheaper)
+- For testing, $5 credit will give you hundreds of queries
+
+## Free Alternative (For Testing)
+If you don't want to pay right now, I can modify the app to:
+1. Use a mock/demo mode (fake responses for testing UI)
+2. Use a free AI API alternative (like Hugging Face)
+
+## Security Tips
+- Never share your API key publicly
+- Never commit it to GitHub
+- Keep it in config.php (which is in .gitignore)
+- You can regenerate it anytime if compromised
+
+## Troubleshooting
+- "Invalid API key": Make sure you copied the entire key
+- "Insufficient credits": Add more credits to your account
+- "Rate limit exceeded": Wait a few minutes or upgrade plan

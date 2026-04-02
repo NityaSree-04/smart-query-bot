@@ -1,0 +1,64 @@
+.ai-bot {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bot-face {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #00d4cc 0%, #00a39e 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 0 20px rgba(0, 255, 245, 0.5);
+    animation: float 3s ease-in-out infinite;
+}
+
+.bot-eye {
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    animation: blink 4s infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Blinking animation */
+@keyframes blink {
+
+    0%,
+    48%,
+    52%,
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+
+    50% {
+        opacity: 0.3;
+        transform: scaleY(0.1);
+    }
+}
+
+/* Hover effect */
+.ai-bot:hover .bot-face {
+    box-shadow: 0 0 30px rgba(0, 255, 245, 0.8);
+    transform: scale(1.1);
+}

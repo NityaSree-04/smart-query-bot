@@ -1,0 +1,38 @@
+# How to Get FREE Gemini API Key
+
+## Step 1: Go to Google AI Studio
+URL: https://aistudio.google.com/app/apikey
+
+## Step 2: Sign In
+- Use your Google account (same one with Gemini Pro)
+- Accept terms if prompted
+
+## Step 3: Create API Key
+1. Click "Create API Key" button
+2. Select "Create API key in new project" (or use existing project)
+3. Your API key will be generated immediately!
+4. Copy the key (starts with "AIza...")
+
+## Step 4: Add to Your Project
+1. Open: C:\Users\nitya\OneDrive\Desktop\Ideathon\api\config.php
+2. Find line with OPENAI_API_KEY
+3. Replace with:
+   define('GEMINI_API_KEY', 'AIza-your-key-here');
+
+## Benefits of Gemini API
+✅ FREE - Generous free tier (1500 requests/day)
+✅ No payment method required
+✅ Fast and accurate
+✅ Same capabilities as GPT-4
+✅ You already have Gemini Pro subscription
+
+## Pricing (if you exceed free tier)
+- Free tier: 1500 requests per day
+- After free tier: Very cheap (~$0.001 per query)
+- Much cheaper than OpenAI!
+
+## Next Steps
+After getting your API key:
+1. I'll modify the PHP code to use Gemini instead of OpenAI
+2. Everything else stays the same
+3. Your app will work perfectly!
